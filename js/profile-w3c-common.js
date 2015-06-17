@@ -19,6 +19,7 @@ define([
             "domReady"
         ,   "core/base-runner"
         ,   "core/ui"
+        ,   "core/aria-busy"
         ,   "core/override-configuration"
         ,   "core/default-root-attr"
         ,   "w3c/l10n"

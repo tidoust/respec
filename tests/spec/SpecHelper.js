@@ -36,7 +36,7 @@ function makeRSDoc (opts, cb) {
 
     // intercept that in the iframe we have finished processing
     window.addEventListener("message", function (ev) {
-        if (ev.data && ev.data.topic == "end-all") cb($ifr[0].contentDocument);
+        if (ev.data && ev.data.topic == "aria-busy") cb($ifr[0].contentDocument);
     }, false);
 }
 

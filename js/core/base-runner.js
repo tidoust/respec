@@ -93,6 +93,7 @@ define(
                     pluginStack--;
                     if (!pluginStack) {
                         respecEvents.pub("end-all");
+                        respecEvents.pub("aria-busy");
                         document.respecDone = true;
                     }
                 });
@@ -141,6 +142,7 @@ define(
                     }
                     respecEvents.pub("end", "core/base-runner");
                 });
+
             }
         };
     }
